@@ -60,7 +60,7 @@
     "zod": "^3.22.4"
   },
   "bin": {
-    "logo-shadcn-react": "bin/install.js"
+    "logo-shadcn-react": "bin/install.cjs"
   },
   "devDependencies": {
     "@types/node": "^20.11.10",
