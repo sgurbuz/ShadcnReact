@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+/* eslint-disable no-undef */
+/* eslint-disable @typescript-eslint/no-var-requires */
 
 const { execSync } = require('child_process');
 const path = require('path');
@@ -37,7 +39,7 @@ try {
       console.log('Installing dependencies...');
       execSync('npm install');
 
-      console.log('Removing useless files);
+      console.log('Removing useless files');
       execSync('npx rimraf ./.git');
       fs.rmdirSync(path.join(projectPath, 'bin'), { recursive: true});
 
