@@ -14,7 +14,7 @@ const rm = promisify(fs.rm);
 if (process.argv.length < 3) {
   console.log("You have to provide a name to your app.");
   console.log("For example :");
-  console.log("    npx logo-shadcn my-app");
+  console.log("    npx logo-shadcn-react my-app");
   process.exit(1);
 }
 
@@ -22,7 +22,7 @@ const projectName = process.argv[2];
 const currentPath = process.cwd();
 const projectPath = path.join(currentPath, projectName);
 // TODO: change to your boilerplate repo
-const git_repo = "https://github.com/sgurbuz/shacdn-react.git";
+const git_repo = "https://github.com/sgurbuz/ShadcnReact.git";
 
 // create project directory
 if (fs.existsSync(projectPath)) {

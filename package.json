@@ -59,6 +59,9 @@
     "vaul": "^0.8.9",
     "zod": "^3.22.4"
   },
+  "bin": {
+    "logo-shadcn-react": "bin/install.mjs"
+  },
   "devDependencies": {
     "@types/node": "^20.11.10",
     "@types/react": "^18.2.43",
